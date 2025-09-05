@@ -1,0 +1,11 @@
+# # Move to Trash instead of permanent delete
+# [[mgr.keymap]]
+# on = "d"
+# exec = "shell 'trash-put \"$@\"'"
+# desc = "Move selected files to trash"
+#
+# # Force delete (Shift + D) if you really want permanent
+# [[mgr.keymap]]
+# on = ["D"]
+# exec = "remove"
+# desc = "Permanently delete selected files"

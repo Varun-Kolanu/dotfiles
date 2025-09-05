@@ -1,0 +1,40 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "$HOME/.config/fastfetch/ascii-presets/retroarch.txt",
+    "color": {
+      "1": "white"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "cyan",
+        "at": "white",
+        "host": "white"
+      },
+      "keyIcon": "󰣇",
+      "format": "{user-name-colored}@{host-name-colored}"
+    },
+    {
+      "type": "separator",
+      "color": {
+        "default": "white"
+      }
+    },
+    {
+      "type": "os",
+      "format": "{pretty-name}"
+    },
+    "wm",
+    "kernel",
+    "uptime",
+    "shell",
+    {
+      "type": "terminal",
+      "format": "{pretty-name} {#37}█{#97}█ {#36}█{#96}█ {#35}█{#95}█ {#34}█{#94}█ {#33}█{#93}█ {#32}█{#92}█ {#31}█{#91}█ {#30}█{#90}█"
+    }
+  ]
+}
