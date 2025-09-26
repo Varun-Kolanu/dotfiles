@@ -41,6 +41,8 @@ alias vin="vim ~/.config/nvim/init.vim"
 alias vih="code dotfiles && code ~/dotfiles/hypr/.config/hypr/hyprland.conf"
 alias viw="vim ~/dotfiles/waybar/.config/waybar/config.jsonc"
 alias clr="clear; fastfetch;"
+alias obsync="rclone bisync ~/Documents/Hyprland ObsidianSync:Obsidian -vv --conflict-resolve newer"
+alias cz="code ~/Coding/zulip"
 
 # antidote setup
 source '/usr/share/zsh-antidote/antidote.zsh'
@@ -61,3 +63,10 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+export TERMINAL=wezterm
+export RCLONE=$(which rclone)
+export RCLONE=$(which rclone)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

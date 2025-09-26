@@ -9,3 +9,9 @@
 # on = ["D"]
 # exec = "remove"
 # desc = "Permanently delete selected files"
+
+[[keymap]]
+on = "o"
+run = "shell 'zen-browser \"$0\" &'"
+desc = "Open in Zen Browser"
+
