@@ -35,13 +35,16 @@ export VISUAL=nvim
 export PATH="$HOME/.local/bin:$PATH"
 
 # aliases
-alias vim="nvim"
+#alias vim="nvim"
 alias viz="vim ~/.zshrc"
 alias vin="vim ~/.config/nvim/init.vim"
 alias vih="code dotfiles && code ~/dotfiles/hypr/.config/hypr/hyprland.conf"
 alias viw="vim ~/dotfiles/waybar/.config/waybar/config.jsonc"
 alias clr="clear; fastfetch;"
-alias obsync="rclone bisync ~/Documents/Hyprland ObsidianSync:Obsidian -vv --conflict-resolve newer"
+alias obsync_down="rclone sync ObsidianSync:Obsidian ~/Documents/Hyprland -vv"
+alias obsync_up="rclone sync ~/Documents/Hyprland ObsidianSync:Obsidian -vv"
+alias booksync_up="rclone sync ~/Documents/Books ObsidianSync:Books -vv"
+alias booksync_down="rclone sync ObsidianSync:Books ~/Documents/Books -vv"
 alias cz="code ~/Coding/zulip"
 
 # antidote setup
