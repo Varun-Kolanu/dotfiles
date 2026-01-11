@@ -17,18 +17,6 @@ setopt extended_history        # record timestamp of each command
 bindkey '^R' history-incremental-search-backward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Changes to the given directory after running yazi with the given arguments.
-#
-# This is a wrapper around yazi that allows it to change directories. It
-# does this by running yazi with the --cwd-file option and then changing
-# directories to the given file. The temporary file is then removed.
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
 # env
 export EDITOR=nvim
 export VISUAL=nvim
@@ -39,13 +27,8 @@ export PATH="$HOME/.local/bin:$PATH"
 alias viz="vim ~/.zshrc"
 alias vin="vim ~/.config/nvim/init.vim"
 alias vih="code dotfiles && code ~/dotfiles/hypr/.config/hypr/hyprland.conf"
-alias viw="vim ~/dotfiles/waybar/.config/waybar/config.jsonc"
+alias viw="code ~/dotfiles/waybar/.config/waybar/config.jsonc"
 alias clr="clear; fastfetch;"
-alias obsync_down="rclone sync ObsidianSync:Obsidian ~/Documents/Hyprland -vv"
-alias obsync_up="rclone sync ~/Documents/Hyprland ObsidianSync:Obsidian -vv"
-alias booksync_up="rclone sync ~/Documents/Books ObsidianSync:Books -vv"
-alias booksync_down="rclone sync ObsidianSync:Books ~/Documents/Books -vv"
-alias cz="code ~/Coding/zulip"
 
 # antidote setup
 source '/usr/share/zsh-antidote/antidote.zsh'
@@ -67,9 +50,15 @@ function y() {
 	rm -f -- "$tmp"
 }
 export TERMINAL=wezterm
-export RCLONE=$(which rclone)
-export RCLONE=$(which rclone)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+#eval "$(zoxide init zsh)"

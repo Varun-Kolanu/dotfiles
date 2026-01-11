@@ -16,7 +16,7 @@
 	"modules-right": [
 		"clock",
 		"battery",
-		"pulseaudio",
+		// "pulseaudio",
 		"bluetooth",
 		"network"
 	],

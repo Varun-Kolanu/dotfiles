@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/vazdura/Coding/firefox-easy-container-shortcuts/manifest.json" added="2026-01-09T19:35:37.801815Z" modified="2026-01-09T19:39:52.585774Z" visited="2026-01-09T19:35:37.801816Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-01-09T19:39:52.585771Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/vazdura/Coding/easy_containers.xpi" added="2026-01-09T19:38:41.900360Z" modified="2026-01-09T19:39:39.814024Z" visited="2026-01-09T19:38:41.900360Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xpinstall"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-01-09T19:39:39.814022Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/vazdura/Coding/easy_shortcuts.xpi" added="2026-01-09T19:43:14.843211Z" modified="2026-01-09T19:43:14.843215Z" visited="2026-01-09T19:43:14.843211Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xpinstall"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-01-09T19:43:14.843212Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/vazdura/Downloads/tekcool_invoice.pdf" added="2026-01-10T07:44:21.005529Z" modified="2026-01-10T07:45:20.067675Z" visited="2026-01-10T07:44:21.005529Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-01-10T07:45:20.067673Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
