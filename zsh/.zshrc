@@ -23,7 +23,7 @@ export VISUAL=nvim
 export PATH="$HOME/.local/bin:$PATH"
 
 # aliases
-#alias vim="nvim"
+alias vim="nvim"
 alias viz="vim ~/.zshrc"
 alias vin="vim ~/.config/nvim/init.vim"
 alias vih="code dotfiles && code ~/dotfiles/hypr/.config/hypr/hyprland.conf"
@@ -62,3 +62,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 #eval "$(zoxide init zsh)"
+
+
+source /usr/share/nvm/init-nvm.sh
