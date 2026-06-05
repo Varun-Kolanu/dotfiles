@@ -42,5 +42,5 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = 'via [${symbol}${version} (\($virtualenv\))]($style) '
+detect_env_vars = ['VIRTUAL_ENV']

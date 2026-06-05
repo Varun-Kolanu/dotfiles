@@ -14,7 +14,7 @@ if [ -z "$WALL" ]; then
 fi
 
 # Set wallpaper using swww
-swww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 144
+awww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 144
 
 # Link to .cache/wallpaper
 ln -sf "$WALL" "$CACHE_WALL"

@@ -1,0 +1,11 @@
+[opener]
+libreoffice = [
+    { run = 'lowriter "$@"', desc = "Open in LibreOffice Writer", orphan = true }
+]
+
+[open]
+rules = [
+    { name = "*.docx", use = "libreoffice" },
+    { name = "*.doc", use = "libreoffice" },
+    { name = "*.odt", use = "libreoffice" }, 
+]

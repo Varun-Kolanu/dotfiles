@@ -224,4 +224,25 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/vazdura/Downloads/nx500.avif" added="2026-06-05T06:57:39.223355Z" modified="2026-06-05T06:58:00.442998Z" visited="2026-06-05T06:57:39.223357Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/avif"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2026-06-05T06:58:00.442993Z" count="4"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-06-05T06:57:39.660499Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/vazdura/Pictures/Wallpapers/11.jpg" added="2026-06-05T06:58:33.334021Z" modified="2026-06-05T06:58:33.334096Z" visited="2026-06-05T06:58:33.334024Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-developer-edition %u&apos;" modified="2026-06-05T06:58:33.334053Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
