@@ -1,10 +1,11 @@
 /* -- Global rules -- */
 * {
   border: none;
-  font-family: "JetbrainsMono Nerd Font";
+  font-family: "JetBrains Mono NL Light", "Font Awesome 6 Free", sans-serif;
   font-size: 15px;
   min-height: 10px;
 }
+
 window#waybar {
   background: rgba(10, 25, 47, 0.9);
   border: 2px solid #0A192F;

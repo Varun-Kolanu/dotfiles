@@ -3,9 +3,17 @@ libreoffice = [
     { run = 'lowriter "$@"', desc = "Open in LibreOffice Writer", orphan = true }
 ]
 
+pdf = [
+    { run = 'firefox-developer-edition "$@"', orphan = true, desc = "Open in Firefox Dev" }
+]
+
 [open]
 rules = [
-    { name = "*.docx", use = "libreoffice" },
-    { name = "*.doc", use = "libreoffice" },
-    { name = "*.odt", use = "libreoffice" }, 
+    { url = "*.docx", use = "libreoffice" },
+    { url = "*.doc", use = "libreoffice" },
+    { url = "*.odt", use = "libreoffice" }, 
+]
+
+prepend_rules = [
+    { mime = "application/pdf", use = "pdf" }
 ]
