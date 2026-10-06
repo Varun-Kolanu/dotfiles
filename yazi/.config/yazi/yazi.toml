@@ -1,10 +1,10 @@
 [opener]
 libreoffice = [
-    { run = 'lowriter "$@"', desc = "Open in LibreOffice Writer", orphan = true }
+    { run = 'lowriter %s', desc = "Open in LibreOffice Writer", orphan = true }
 ]
 
 pdf = [
-    { run = 'firefox-developer-edition "$@"', orphan = true, desc = "Open in Firefox Dev" }
+    { run = 'firefox-developer-edition %s', orphan = true, desc = "Open in Firefox Dev" }
 ]
 
 [open]
