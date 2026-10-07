@@ -13,7 +13,7 @@ if [ -z "$WALL" ]; then
     exit 1
 fi
 
-# Set wallpaper using swww
+# Set wallpaper using awww
 awww img "$WALL" --transition-type center --transition-duration 1 --transition-fps 144
 
 # Link to .cache/wallpaper
